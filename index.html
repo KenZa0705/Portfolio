@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KECUENZA IT</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!-- Home Button -->
+                <a class="navbar-left" href="#"><img src="/images/home.jfif" alt="Home" class="home"></a>
+
+                <!-- Hamburger menu for About Us and Contact Us on smaller screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- About Us Button-->
+                        <li class="nav-item">
+                            <a class="nav-link drk-bg" href="#about">About Me</a>
+                        </li>
+                        <!-- Projects Button-->
+                         <li class="nav-item">
+                            <a class="nav-link drk-bg" href="#projects">Projects</a>
+                         </li>
+                        <!-- Contact Us Button-->
+                        <li class="nav-item">
+                            <a class="nav-link drk-bg" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page 1: Header Section -->
+    <section class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">KE CUENZA'S PORTFOLIO</h1>
+            <p class="lead drk-bg"><em>An IT passionate in building IT things</em></p>
+            <a href="/more.html" class="btn button">Projects</a>
+        </div>
+    </section>
+
+    <!-- Page 2: About Me Section -->
+    <section id="about" class="py-5 pt-5 bg-white">
+        <div class="container">
+            <h2 class="text-center">Introduction</h2>
+            <img src="/images/home.jfif" alt="Profile" class="profile">
+            <p class="text-center"> Hi! My name is Kent Edmark D. Cuenza, an IT student. I'm currently student Bachelor of Science in Information Technology at Batangas State University TNEU - Lipa City Branch.</p>
+            <div class="resume">
+                <h5>Resume</h5>
+                <a href="/attachment/Blue Modern Resume.pdf" download class="download-button"><img src="/images/download.gif" alt="Download Resume"></a>
+                    <!-- Button to trigger modal -->
+                <label for="fileModal" class="view-button"><img src="/images/eye.gif" alt="View Resume"></label>
+                <!-- Hidden checkbox to toggle the modal -->
+                <input type="checkbox" id="fileModal" class="modal-toggle">
+                <!-- Modal content -->
+                <div class="modal">
+                    <div class="modal-content">
+                        <label for="fileModal" class="close">&times;</label>
+                        <iframe src="/attachment/Blue Modern Resume.pdf" width="100%" height="700px"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 3: Specialisation Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center">Specialisation</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">Providing <strong>responsive and functional</strong> websites that caters to all</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Development</h5>
+                            <p class="card-text">Developing <strong>windows</strong> application in the side</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">IT Service Desk</h5>
+                            <p class="card-text">With experience on <strong>basic and advanced IT troubleshooting</strong></p>
+                            <div class="img-container">
+                                <div class="img-slider-wrapper">
+                                    <div class="img-slider">
+                                        <img id="slide-1" src="/images/ITSD 2.jpg" alt="IT Service Desk Img 1" class="avg-img">
+                                        <img id="slide-2" src="/images/ITSD.jpg" alt="IT Service Desk Img 2" class="avg-img">
+                                        <img id="slide-3" src="/images/ITSD 3.png" alt="IT Service Desk Img 3" class="avg-img">
+                                    </div>
+                                    <div class="img-slider-nav">
+                                        <a href="#slide-1"></a>
+                                        <a href="#slide-2"></a>
+                                        <a href="#slide-3"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 4: Projects Section -->
+    <section id="projects" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <p>No matter where you are, we've got you covered.</p>
+                    <p><strong>We are global.</strong></p>
+                </div>
+                <div class="col-md-4">
+                    <p>Virtual assistance. Talk to us about any concerns, 24/7.</p>
+                    <p><strong>We value our clients.</strong></p>
+                </div>
+                <div class="col-md-4">
+                    <p>Easy peasy UI. Our interface is simple and easy to use.</p>
+                    <p><strong>We use top-rate systems.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 5: Experience Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center">Work Experience</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services."</p>
+                        <footer class="blockquote-footer">Esha Dharohar, <cite title="Source Title">Wright Co.</cite></footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services."</p>
+                        <footer class="blockquote-footer">Vihaan Kumar, <cite title="Source Title">Planwell Financial</cite></footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services."</p>
+                        <footer class="blockquote-footer">Raju Singh, <cite title="Source Title">Harmeet Express</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 6: Contact Us Section -->
+    <section id="contact" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <p class="text-center">Let's work together! Book a free consultation.</p>
+            <div class="text-center contacts">
+                <p><strong>PHONE:</strong> +63 963 524 2249</p>
+                <p><strong>EMAIL:</strong> kentedmarkcuenza@gmail.com</p>
+                <p><strong>SOCIALS:</strong></p>
+                <a href="https://www.facebook.com/my.name.is.buboy/" target="_blank"><img src="/images/fb.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/k.cnz1219" target="_blank"><img src="/images/insta.jpg" alt="Instagram"></a>
+                <a href="https://github.com/KenZa0705" target="_blank"><img src="/images/git.png" alt="GitHub"></a>
+                <a href="https://ph.linkedin.com/in/kent-edmark-cuenza-34467323b" target="_blank"><img src="/images/linked in.png" alt="Linked In"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-3 footer drk-bg bg-dark">
+        <p>&copy 2024 KEC. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
