@@ -12,7 +12,7 @@
 
     <!-- Header Section -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <!-- Home Button -->
                 <a class="navbar-left" href="#"><img src="/images/home.jfif" alt="Home" class="home"></a>
@@ -29,13 +29,21 @@
                         <li class="nav-item">
                             <a class="nav-link drk-bg" href="#about">About Me</a>
                         </li>
+                        <!-- Specialisation Button-->
+                        <li class="nav-item">
+                            <a class="nav-link drk-bg" href="#specialisation">Specialisation</a>
+                         </li>
                         <!-- Projects Button-->
                          <li class="nav-item">
                             <a class="nav-link drk-bg" href="#projects">Projects</a>
                          </li>
-                        <!-- Contact Us Button-->
+                         <!-- Projects Button-->
+                         <li class="nav-item">
+                            <a class="nav-link drk-bg" href="#experience">Experience</a>
+                         </li>
+                        <!-- Contact Me Button-->
                         <li class="nav-item">
-                            <a class="nav-link drk-bg" href="#contact">Contact Us</a>
+                            <a class="nav-link drk-bg" href="#contact">Contact Me</a>
                         </li>
                     </ul>
                 </div>
@@ -44,7 +52,7 @@
     </header>
 
     <!-- Page 1: Header Section -->
-    <section class="bg-dark text-white text-center py-5">
+    <section class="text-white text-center py-5 header">
         <div class="container">
             <h1 class="display-4">KE CUENZA'S PORTFOLIO</h1>
             <p class="lead drk-bg"><em>An IT passionate in building IT things</em></p>
@@ -53,39 +61,80 @@
     </section>
 
     <!-- Page 2: About Me Section -->
-    <section id="about" class="py-5 pt-5 bg-white">
+    <section id="about" class="py-5 pt-5">
         <div class="container intro">
-            <h2 class="text-center">Introduction</h2>
-            <img src="/images/home.jfif" alt="Profile" class="profile">
-            <div class="resume">
-                <p> Hi! My name is Kent Edmark D. Cuenza, an IT student. I'm currently student Bachelor of Science in Information Technology at Batangas State University TNEU - Lipa City Branch.</p>
-                <h5>Resume</h5>
-                <a href="/attachment/Blue Modern Resume.pdf" download class="download-button"><img src="/images/download.gif" alt="Download Resume"></a>
-                    <!-- Button to trigger modal -->
-                <label for="fileModal" class="view-button"><img src="/images/eye.gif" alt="View Resume"></label>
-                <!-- Hidden checkbox to toggle the modal -->
-                <input type="checkbox" id="fileModal" class="modal-toggle">
-                <!-- Modal content -->
-                <div class="modal">
-                    <div class="modal-content">
-                        <label for="fileModal" class="close">&times;</label>
-                        <iframe src="/attachment/Blue Modern Resume.pdf" width="100%" height="700px"></iframe>
+            <h2 class="text-center title">Introduction</h2>
+            <div class="profile-container">
+                <img src="/images/home.jfif" alt="Profile" class="profile">
+                <div class="profile-description">
+                    <blockquote> Hi! My name is Kent Edmark D. Cuenza, an IT student. I'm currently studying Bachelor of Science in Information Technology at Batangas State University TNEU - Lipa City Branch.</blockquote>
+                    <div class="resume">
+                        <h5>Resume</h5>
+                        <a href="/attachment/Blue Modern Resume.pdf" download class="download-button"><img src="/images/download.gif" alt="Download Resume"></a>
+                            <!-- Button to trigger modal -->
+                        <label for="fileModal" class="view-button"><img src="/images/eye.gif" alt="View Resume"></label>
+                        <!-- Hidden checkbox to toggle the modal -->
+                        <input type="checkbox" id="fileModal" class="modal-toggle">
+                        <!-- Modal content -->
+                        <div class="modal">
+                            <div class="modal-content">
+                                <label for="fileModal" class="close">&times;</label>
+                                <iframe src="/attachment/Blue Modern Resume.pdf"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
 
     <!-- Page 3: Specialisation Section -->
-    <section class="py-5 bg-white">
+    <section class="py-5" id="specialisation">
         <div class="container">
             <h2 class="text-center">Specialisation</h2>
+
+            <div class="slideshow-container">
+                <div class="slideshow">
+                        <img src="/images/lang/c++.png" alt="Language 1" class="slide">
+                        <img src="/images/lang/css.png" alt="Language 2" class="slide">
+                        <img src="/images/lang/html.png" alt="Language 3" class="slide">
+                        <img src="/images/lang/java.png" alt="Language 4" class="slide">
+                        <img src="/images/lang/php.png" alt="Language 5" class="slide">
+                        <img src="/images/lang/postgres.png" alt="Language 6" class="slide">
+                        <img src="/images/lang/python.png" alt="Language 7" class="slide">
+                </div>
+                <div class="slideshow">
+                    <img src="/images/lang/c++.png" alt="Language 1" class="slide">
+                    <img src="/images/lang/css.png" alt="Language 2" class="slide">
+                    <img src="/images/lang/html.png" alt="Language 3" class="slide">
+                    <img src="/images/lang/java.png" alt="Language 4" class="slide">
+                    <img src="/images/lang/php.png" alt="Language 5" class="slide">
+                    <img src="/images/lang/postgres.png" alt="Language 6" class="slide">
+                    <img src="/images/lang/python.png" alt="Language 7" class="slide">
+                </div>
+            </div>
+
             <div class="row text-center">
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Web Development</h5>
                             <p class="card-text">Providing <strong>responsive and functional</strong> websites that caters to all</p>
+                            <div class="img-container">
+                                <div class="img-slider-wrapper">
+                                    <div class="img-slider">
+                                        <img id="web-slide-1" src="/images/admin_bakery/login.png" alt="Website Picture 1" class="avg-img">
+                                        <img id="web-slide-2" src="/images/admin_bakery/inventory.png" alt="Website Picture 2" class="avg-img">
+                                        <img id="web-slide-3" src="/images/admin_bakery/dashboard.png" alt="Website Picture 3" class="avg-img">
+                                    </div>
+                                    <div class="img-slider-nav">
+                                        <a href="#web-slide-1"></a>
+                                        <a href="#web-slide-2"></a>
+                                        <a href="#web-slide-3"></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -93,7 +142,19 @@
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Software Development</h5>
-                            <p class="card-text">Developing <strong>windows</strong> application in the side</p>
+                            <p class="card-text">Still learning on how to develop <strong>windows</strong> applications on the side</p>
+                            <div class="img-container">
+                                <div class="img-slider-wrapper">
+                                    <div class="img-slider">
+                                        <img id="soft-slide-1" src="/images/app_bakery/1.png" alt="Software Image 1" class="avg-img">
+                                        <img id="soft-slide-2" src="/images/app_bakery/2.png" alt="Software Image 2" class="avg-img">
+                                    </div>
+                                    <div class="img-slider-nav">
+                                        <a href="#soft-slide-1"></a>
+                                        <a href="#soft-slide-2"></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -124,72 +185,70 @@
     </section>
 
     <!-- Page 4: Projects Section -->
-    <section id="projects" class="py-5 bg-white">
+    <section id="projects" class="py-5">
         <div class="container">
-            <h2 class="text-center">Projects</h2>
+            <h2 class="text-center title">Projects</h2>
             <div class="row text-center">
-                <div class="col-md-4">
-                    <p>No matter where you are, we've got you covered.</p>
-                    <p><strong>We are global.</strong></p>
+                <div class="col-md-4 project_description">
+                    <img src="/images/admin_bakery/dashboard.png" alt="Administrator Page Bakery">
+                    <p>Bakery Management System - Administrator</p>
+                    <p><strong>Making it easy to manage your bakery.</strong></p>
                 </div>
-                <div class="col-md-4">
-                    <p>Virtual assistance. Talk to us about any concerns, 24/7.</p>
-                    <p><strong>We value our clients.</strong></p>
+                <div class="col-md-4 project_description">
+                    <img src="/images/cust_bakery/customerhome.png" alt="Customer Page Bakery">
+                    <p>Bakery Management System - Customer</p>
+                    <p><strong>Ease of ordering experience</strong></p>
                 </div>
-                <div class="col-md-4">
-                    <p>Easy peasy UI. Our interface is simple and easy to use.</p>
-                    <p><strong>We use top-rate systems.</strong></p>
+                <div class="col-md-4 project_description">
+                    <img src="/images/form.png" alt="Sample Form">
+                    <p>Website Sample Form</p>
+                    <p><strong>Survey Form</strong></p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Page 5: Experience Section -->
-    <section class="py-5 bg-white">
+    <section class="py-5" id="experience">
         <div class="container">
-            <h2 class="text-center">Work Experience</h2>
+            <h2 class="text-center">Experience</h2>
             <div class="row text-center">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <blockquote class="blockquote">
-                        <p>"Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services."</p>
-                        <footer class="blockquote-footer">Esha Dharohar, <cite title="Source Title">Wright Co.</cite></footer>
+                        <p>"Customer Service Representative"</p>
+                        <footer class="blockquote-footer">ResultsCX <cite title="Source Title">2020-2021</cite></footer>
                     </blockquote>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <blockquote class="blockquote">
-                        <p>"Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services."</p>
-                        <footer class="blockquote-footer">Vihaan Kumar, <cite title="Source Title">Planwell Financial</cite></footer>
-                    </blockquote>
-                </div>
-                <div class="col-md-4">
-                    <blockquote class="blockquote">
-                        <p>"Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services."</p>
-                        <footer class="blockquote-footer">Raju Singh, <cite title="Source Title">Harmeet Express</cite></footer>
+                        <p>"IT Service Desk"</p>
+                        <footer class="blockquote-footer">TTEC Lipa <cite title="Source Title">2024-Current</cite></footer>
                     </blockquote>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Page 6: Contact Us Section -->
-    <section id="contact" class="py-5 bg-white">
+    <!-- Page 6: Contact Me Section -->
+    <section id="contact" class="py-5">
         <div class="container">
-            <h2 class="text-center">Contact Us</h2>
-            <p class="text-center">Let's work together! Book a free consultation.</p>
+            <h2 class="text-center">Contact Me</h2>
+            <p class="text-center">Let's work together! Send me a message!</p>
             <div class="text-center contacts">
                 <p><strong>PHONE:</strong> +63 963 524 2249</p>
                 <p><strong>EMAIL:</strong> kentedmarkcuenza@gmail.com</p>
                 <p><strong>SOCIALS:</strong></p>
                 <a href="https://www.facebook.com/my.name.is.buboy/" target="_blank"><img src="/images/fb.png" alt="Facebook" class="socials"></a>
-                <a href="https://www.instagram.com/k.cnz1219" target="_blank"><img src="/images/insta.jpg" alt="Instagram" class="socials"></a>
+                <a href="https://www.instagram.com/k.cnz1219" target="_blank"><img src="/images/instagram.png" alt="Instagram" class="socials"></a>
                 <a href="https://github.com/KenZa0705" target="_blank"><img src="/images/git.png" alt="GitHub" class="socials"></a>
                 <a href="https://ph.linkedin.com/in/kent-edmark-cuenza-34467323b" target="_blank"><img src="/images/linked in.png" class="socials" alt="Linked In"></a>
             </div>
         </div>
     </section>
 
-    <footer class="text-center py-3 footer drk-bg bg-dark">
+    <footer class="text-center py-3 footer drk-bg">
         <p>&copy 2024 KEC. All rights reserved.</p>
+        <p>Icons from <a href="https://www.flaticon.com/" title="icons">Flaticon</a></p>
     </footer>
 
     <!-- Bootstrap JS CDN -->
