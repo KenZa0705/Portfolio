@@ -54,10 +54,6 @@ section {
     border-bottom: #3bba9c solid 0.3rem;
 }
 
-#about {
-    background: linear-gradient();
-}
-
 /* Navbar styling */
 .navbar-nav {
     flex-grow: 1;
