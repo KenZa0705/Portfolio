@@ -15,7 +15,7 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-h2, h5 {
+h2, h5, h3 {
     font-family: Avenir;
 }
 
@@ -46,6 +46,10 @@ body {
 
 h2 {
     margin-bottom: 5rem;
+    color: #3bba9c;
+}
+
+h3 {
     color: #3bba9c;
 }
 
