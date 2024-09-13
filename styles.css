@@ -5,6 +5,24 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-padding-top: 5rem; /* Adjust based on the height of your fixed header */
+}
+
+/*Font styles*/
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2, h5 {
+    font-family: Avenir;
+}
+
+p, blockquote {
+    font-family: "Avenir Light";
+}
+
 /* Header styling: fixed at the top with background color and border */
 header {
     position: fixed;
@@ -27,7 +45,6 @@ body {
 }
 
 h2 {
-    margin-top: 5rem;
     margin-bottom: 5rem;
     color: #3bba9c;
 }
@@ -35,6 +52,10 @@ h2 {
 section {
     background-color: #3c3f58;
     border-bottom: #3bba9c solid 0.3rem;
+}
+
+#about {
+    background: linear-gradient();
 }
 
 /* Navbar styling */
@@ -78,8 +99,18 @@ h1, .drk-bg {
 }
 
 .view-button, .download-button {
-    border: black solid 0.1rem;
-    color: #3bba9c;
+    padding: 1rem;
+    background-color: #2e3047;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex; /* Change to inline-flex for inline and flexbox behavior */
+    align-items: center;  /* Vertically center the content */
+    justify-content: center;  /* Horizontally center the content */
+    gap: 0.5rem;  /* Optional: adds space between text and image */
+    margin-left: 0.5rem;
+    text-align: center;
 }
 
 .button:hover {
@@ -197,8 +228,9 @@ h1, .drk-bg {
 
 /* Button images */
 .download-button img, .view-button img {
-    margin-left: 0.5rem;
-    width: 1.5rem;
+    width: 1.5rem; /* Adjust the size of the image */
+    height: 1.5rem; /* Ensure the image has a consistent height */
+    margin: 0.2rem;
 }
 
 /* Profile image styling */
@@ -266,11 +298,18 @@ h1, .drk-bg {
 
 .modal-content {
     background-color: white;
-    width: 80%;
-    max-width: 900px;
+    width: 90%;
+    height: 90%;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.modal-content object {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 /* Close button for modal */
@@ -414,6 +453,15 @@ h1, .drk-bg {
 
     .download-button img, .view-button img {
         width: 1rem;
+        height: 1rem;
+        margin: 0.1rem;
+    }
+
+    /* Profile description */
+    .profile-description {
+        flex-grow: 1;
+        position: relative;
+        padding-bottom: 0;
     }
 
     .profile-description blockquote {

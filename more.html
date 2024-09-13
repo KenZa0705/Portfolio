@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KECUENZA IT</title>
+    <title>KECUENZA IT - Projects</title>
     <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
@@ -16,7 +16,7 @@
                 <!-- Home Button -->
                 <a class="navbar-left" href="/index.html"><img src="/images/home.jfif" alt="Home" class="home"></a>
 
-                <!-- Hamburger menu for About Us and Contact Us on smaller screens -->
+                <!-- Hamburger menu for smaller screens -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -24,25 +24,20 @@
                 <!-- Collapsible content -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <!-- About Us Button-->
                         <li class="nav-item">
-                            <a class="nav-link drk-bg" href="index.html#about">About Me</a>
+                            <a class="nav-link drk-bg" href="/index.html#about">About Me</a>
                         </li>
-                        <!-- Specialisation Button-->
                         <li class="nav-item">
-                            <a class="nav-link drk-bg" href="index.html#specialisation">Specialisation</a>
-                         </li>
-                        <!-- Projects Button-->
-                         <li class="nav-item">
-                            <a class="nav-link drk-bg" href="index.html#projects">Projects</a>
-                         </li>
-                         <!-- Projects Button-->
-                         <li class="nav-item">
-                            <a class="nav-link drk-bg" href="index.html#experience">Experience</a>
-                         </li>
-                        <!-- Contact Me Button-->
+                            <a class="nav-link drk-bg" href="/index.html#specialisation">Specialisation</a>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link drk-bg" href="index.html#contact">Contact Me</a>
+                            <a class="nav-link drk-bg" href="/index.html#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link drk-bg" href="/index.html#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link drk-bg" href="/index.html#contact">Contact Me</a>
                         </li>
                     </ul>
                 </div>
@@ -50,9 +45,55 @@
         </nav>
     </header>
 
+    <!-- Projects Section -->
+    <section class="py-5" id="projects">
+        <div class="container">
+            <h2 class="text-center title">My Projects</h2>
+            <div class="row text-center">
+                <!-- Project 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="/images/admin_bakery/dashboard.png" class="card-img-top" alt="Bakery Admin Dashboard">
+                        <div class="card-body">
+                            <h5 class="card-title">Bakery Management System (Admin)</h5>
+                            <p class="card-text">An administrative dashboard for managing bakery operations.</p>
+                            <a href="https://github.com/KenZa0705/BakeryWebsiteAdmin" class="btn button" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="/images/cust_bakery/customerhome.png" class="card-img-top" alt="Bakery Customer Dashboard">
+                        <div class="card-body">
+                            <h5 class="card-title">Bakery Management System (Customer)</h5>
+                            <p class="card-text">A customer-facing interface for placing bakery orders.</p>
+                            <a href="https://github.com/KenZa0705/BakeryWebsiteCustomer" class="btn button" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="/images/form.png" class="card-img-top" alt="Survey Form">
+                        <div class="card-body">
+                            <h5 class="card-title">Survey Form</h5>
+                            <p class="card-text">A sample form for collecting user feedback.</p>
+                            <a href="https://github.com/KenZa0705/Sample-Form" class="btn button" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="text-center py-3 footer drk-bg">
+        <p>&copy; 2024 KEC. All rights reserved.</p>
+        <p>Icons from <a href="https://www.flaticon.com/" title="icons">Flaticon</a></p>
+    </footer>
 
-<!-- Bootstrap JS CDN -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
