@@ -17,7 +17,7 @@
                 <!-- Home Button -->
                 <a class="navbar-left" href="#"><img src="images/home.jfif" alt="Home" class="home"></a>
 
-                <!-- Hamburger menu for About Us and Contact Us on smaller screens -->
+                <!-- Hamburger menu -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -25,7 +25,7 @@
                 <!-- Collapsible content -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <!-- About Us Button-->
+                        <!-- About Button-->
                         <li class="nav-item">
                             <a class="nav-link drk-bg" href="#about">About Me</a>
                         </li>
@@ -37,7 +37,7 @@
                          <li class="nav-item">
                             <a class="nav-link drk-bg" href="#projects">Projects</a>
                          </li>
-                         <!-- Projects Button-->
+                         <!-- Experience Button-->
                          <li class="nav-item">
                             <a class="nav-link drk-bg" href="#experience">Experience</a>
                          </li>
@@ -51,7 +51,7 @@
         </nav>
     </header>
 
-    <!-- Page 1: Header Section -->
+    <!-- Header Section -->
     <section class="text-white text-center py-5 header">
         <div class="container">
             <h1 class="display-4">KE CUENZA'S PORTFOLIO</h1>
@@ -60,7 +60,7 @@
         </div>
     </section>
 
-    <!-- Page 2: About Me Section -->
+    <!-- About Me Section -->
     <section id="about" class="py-5 pt-5 about-section">
         <div class="container intro">
             <h2 class="text-center title">Introduction</h2>
@@ -71,13 +71,11 @@
                     <div class="resume">
                         <h5>Resume</h5>
                         <a href="attachment/Resume.pdf" download class="download-button"><img src="images/download.gif" alt="Download Resume"></a>
-                            <!-- Button to trigger modal -->
+                            
+                        <!-- Button for modal -->
                         <label for="fileModal" class="view-button"><img src="images/eye.gif" alt="View Resume"></label>
-                        <!-- Hidden checkbox to toggle the modal -->
                         <input type="checkbox" id="fileModal" class="modal-toggle">
-                        <!-- Modal content -->
                         <div class="modal">
-                            <!-- Modal content -->
                             <div class="modal-content">
                                 <label for="fileModal" class="close">&times;</label>
                                 <object data="attachment/Resume.pdf" type="application/pdf">
@@ -93,7 +91,7 @@
         </div>
     </section>
 
-    <!-- Page 3: Specialisation Section -->
+    <!-- Specialisation Section -->
     <section class="py-5" id="specialisation">
         <div class="container">
             <h2 class="text-center">Specialisation</h2>
@@ -126,7 +124,7 @@
                             <h5 class="card-title">Web Development</h5>
                             <p class="card-text">Providing <strong>responsive and functional</strong> websites that caters to all</p>
                             <div class="img-container">
-                                <div class="img-slider-wrapper">
+                                <div class="img-slider-wrapper project-prime-img">
                                     <div class="img-slider">
                                         <img id="web-slide-1" src="images/admin_bakery/login.png" alt="Website Picture 1" class="avg-img">
                                         <img id="web-slide-2" src="images/admin_bakery/inventory.png" alt="Website Picture 2" class="avg-img">
@@ -148,7 +146,7 @@
                             <h5 class="card-title">Software Development</h5>
                             <p class="card-text">Still learning on how to develop <strong>windows</strong> applications on the side</p>
                             <div class="img-container">
-                                <div class="img-slider-wrapper">
+                                <div class="img-slider-wrapper project-prime-img">
                                     <div class="img-slider">
                                         <img id="soft-slide-1" src="images/app_bakery/1.png" alt="Software Image 1" class="avg-img">
                                         <img id="soft-slide-2" src="images/app_bakery/2.png" alt="Software Image 2" class="avg-img">
@@ -168,7 +166,7 @@
                             <h5 class="card-title">IT Service Desk</h5>
                             <p class="card-text">With experience on <strong>basic and advanced IT troubleshooting</strong></p>
                             <div class="img-container">
-                                <div class="img-slider-wrapper">
+                                <div class="img-slider-wrapper project-prime-img">
                                     <div class="img-slider">
                                         <img id="slide-1" src="images/ITSD-2.jpg" alt="IT Service Desk Img 1" class="avg-img">
                                         <img id="slide-2" src="images/ITSD.jpg" alt="IT Service Desk Img 2" class="avg-img">
@@ -188,23 +186,23 @@
         </div>
     </section>
 
-    <!-- Page 4: Projects Section -->
+    <!-- Projects Section -->
     <section id="projects" class="py-5">
         <div class="container">
             <h2 class="text-center title">Projects</h2>
             <div class="row text-center">
                 <div class="col-md-4 project_description">
-                    <img src="images/admin_bakery/dashboard.png" alt="Administrator Page Bakery">
+                    <img src="images/admin_bakery/dashboard.png" alt="Administrator Page Bakery" class="project-prime-img">
                     <h5 class="card-title"><strong>Bakery Management System - Administrator</strong></h5>
                     <p><em>Making it easy to manage your bakery.</em></p>
                 </div>
                 <div class="col-md-4 project_description">
-                    <img src="images/cust_bakery/customerhome.png" alt="Customer Page Bakery">
+                    <img src="images/cust_bakery/customerhome.png" alt="Customer Page Bakery" class="project-prime-img">
                     <h5 class="card-title"><strong>Bakery Management System - Customer</strong></h5>
                     <p><em>Ease of ordering experience</em></p>
                 </div>
                 <div class="col-md-4 project_description">
-                    <img src="images/form.png" alt="Sample Form">
+                    <img src="images/form.png" alt="Sample Form" class="project-prime-img">
                     <h5 class="card-title"><strong>Website Sample Form</strong></h5>
                     <p><em>Survey Form</em></p>
                 </div>
@@ -213,7 +211,7 @@
         </div>
     </section>
 
-    <!-- Page 5: Experience Section -->
+    <!-- Experience Section -->
     <section class="py-5" id="experience">
         <div class="container">
             <h2 class="text-center">Experience</h2>
@@ -234,7 +232,7 @@
         </div>
     </section>
 
-    <!-- Page 6: Contact Me Section -->
+    <!-- Contact Me Section -->
     <section id="contact" class="py-5">
         <div class="container">
             <h2 class="text-center">Contact Me</h2>
