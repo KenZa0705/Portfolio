@@ -407,6 +407,16 @@ h1, .drk-bg {
     background-color: #2e3047;
 }
 
+/* More.html specific styles*/
+
+.project-prime-img:hover {
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+    box-shadow: 0 0 10px #3bba9c; 
+    cursor: pointer;
+    transform: scale(1.5);
+    z-index: 5;
+}
 
 /* Scrolling */
 @keyframes slide {
@@ -475,6 +485,16 @@ h1, .drk-bg {
     .slideshow-container {
         width: 100%;
     }
+
+    .project-prime-img:hover {
+        border-radius: 15px;
+        transition: transform 0.5s ease;
+        box-shadow: 0 0 10px #3bba9c; 
+        cursor: pointer;
+        transform: none;
+        z-index: 5;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -482,15 +502,13 @@ h1, .drk-bg {
         width: 60px;
         height: 60px;
     }
-}
 
-/* More.html specific styles*/
-
-.project-prime-img:hover {
-    border-radius: 15px;
-    transition: transform 0.5s ease;
-    box-shadow: 0 0 10px #3bba9c; 
-    cursor: pointer;
-    transform: scale(1.5);
-    z-index: 5;
+    .project-prime-img:hover {
+        border-radius: 15px;
+        transition: transform 0.5s ease;
+        box-shadow: 0 0 10px #3bba9c; 
+        cursor: pointer;
+        transform: none;
+        z-index: 5;
+    }
 }
