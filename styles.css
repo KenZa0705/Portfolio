@@ -187,9 +187,13 @@ h1, .drk-bg {
 
 .project_description img {
     margin-bottom: 1rem;
-    height: 12rem;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
     border-radius: 15px;
     box-shadow: 0 0 10px #3bba9c; 
+    aspect-ratio: 16 / 9;
+    object-fit: cover; /* Ensures the image covers the aspect ratio */
 }
 
 /* Button hover */
@@ -418,6 +422,10 @@ h1, .drk-bg {
     cursor: pointer;
     transform: scale(1.5);
     z-index: 5;
+}
+
+.more-projects-section {
+    height: 100vh;
 }
 
 /* Scrolling */
