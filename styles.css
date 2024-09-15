@@ -191,7 +191,7 @@ h1, .drk-bg {
     border-radius: 15px;
     box-shadow: 0 0 10px #3bba9c; 
     aspect-ratio: 16 / 9;
-    object-fit: cover; /* Ensures the image covers the aspect ratio */
+    object-fit: cover;
 }
 
 /* Button hover */
